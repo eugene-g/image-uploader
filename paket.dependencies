@@ -1,0 +1,34 @@
+version 5.242.2
+
+source https://api.nuget.org/v3/index.json
+
+framework: netcoreapp31, netstandard20
+
+nuget Microsoft.NET.Test.Sdk
+nuget Microsoft.AspNetCore.Hosting
+nuget Microsoft.AspNetCore.StaticFiles
+nuget Microsoft.AspNetCore.TestHost
+nuget Microsoft.Extensions.DependencyInjection
+nuget Microsoft.Extensions.Configuration.Json
+
+nuget FSharp.Core
+nuget Newtonsoft.Json
+nuget Thoth.Json.Net
+nuget Giraffe
+nuget Taskbuilder.fs 2.2.0-alpha
+nuget System.Drawing.Common
+nuget Npgsql
+nuget Serilog
+nuget Serilog.AspNetCore
+nuget Serilog.Extensions.Logging
+nuget Serilog.Sinks.Console
+nuget Serilog.Sinks.File
+nuget Serilog.Enrichers.Environment
+nuget Serilog.Settings.Configuration
+nuget Serilog.Enrichers.Thread
+nuget xunit
+nuget xunit.runner.visualstudio
+nuget Unquote
+nuget FsCheck
+nuget FsCheck.Xunit
+nuget Serilog.Sinks.XUnit

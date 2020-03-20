@@ -1,0 +1,14 @@
+FSharp.Core
+Giraffe
+Taskbuilder.fs
+System.Drawing.Common
+Microsoft.AspNetCore.StaticFiles
+Microsoft.Extensions.Configuration.Json
+Serilog
+Serilog.AspNetCore
+Serilog.Extensions.Logging
+Serilog.Sinks.Console
+Serilog.Sinks.File
+Serilog.Enrichers.Environment
+Serilog.Settings.Configuration
+Serilog.Enrichers.Thread

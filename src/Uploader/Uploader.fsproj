@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyTitle>Uploader</AssemblyTitle>
+    <AssemblyName>Uploader</AssemblyName>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Uploader</RootNamespace>
+    <NoWarn>FS2003</NoWarn>
+    <DebugType>portable</DebugType>
+    <OutputType>Exe</OutputType>
+    <Version>0.0.1</Version>
+    <Authors>Evgeny Grebenyuk</Authors>
+    <Copyright>Evgeny Grebenyuk</Copyright>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Json.fs" />
+    <Compile Include="Api.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Db.fs" />
+    <Compile Include="Configuration.fs" />
+    <Compile Include="Image.fs" />
+    <Compile Include="Program.fs" />
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.overrides.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.prod.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Dockerfile">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
